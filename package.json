@@ -1,0 +1,14 @@
+{
+  "name": "serverest-test",
+  "version": "1.0.0",
+  "description": "projeto de automação de testes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arthur nascimento",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.2"
+  }
+}
