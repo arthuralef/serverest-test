@@ -11,5 +11,5 @@ describe('primeiro teste', () => {
         loginPage.checkpage()
 
         loginPage.createNewAccount()
-    });
-});
+    })
+})

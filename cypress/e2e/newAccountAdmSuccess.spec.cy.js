@@ -14,7 +14,7 @@ describe('primeiro teste', () => {
 
         loginPage.createNewAccount()
 
-        createAccountPage.createNewAccount(chance.first(), chance.email(), chance.cpf())
+        createAccountPage.createNewAccountAdm(chance.first(), chance.email(), chance.cpf())
 
         createAccountPage.checkpageAdm()
     });
