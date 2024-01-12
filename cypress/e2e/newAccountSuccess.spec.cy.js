@@ -17,5 +17,5 @@ describe('primeiro teste', () => {
         createAccountPage.createNewAccount(chance.first(), chance.email(), chance.cpf())
 
         createAccountPage.checkpage()
-    });
-});
+    })
+})

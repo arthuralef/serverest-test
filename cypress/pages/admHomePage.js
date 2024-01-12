@@ -13,6 +13,11 @@ class admHome {
 
     }
 
+    checkpage () {
+        cy.wait(1000)
+        cy.location('pathname').should('equal', '/admin/home')
+    }
+
     userRegistration() {
         cy.get(this.selectorsList().userRegistrationButton).click()
         cy.location('pathname').should('equal', '/admin/cadastrarusuarios')

@@ -3,6 +3,8 @@ import createAccount from "../pages/createAccountPage"
 import header from "../pages/headerPage"
 import registerProducts from "../pages/registerProductsPage"
 import listUsers from "../pages/listUsersPage"
+import admHome from "../pages/admHomePage"
+import userRegistration from "../pages/userRegistrationPage"
 
 const Chance = require('chance')
 
@@ -12,6 +14,8 @@ const createAccountPage = new createAccount()
 const headerPage = new header()
 const registerProductsPage = new registerProducts()
 const listUsersPage = new listUsers()
+const admHomePage = new admHome()
+const userRegistrationPage = new userRegistration()
 
 describe('primeiro teste', () => {
     it('tente serverest', () =>{
@@ -22,14 +26,12 @@ describe('primeiro teste', () => {
 
         createAccountPage.createNewAccountAdm(chance.first(), chance.email(), chance.cpf())
 
-        createAccountPage.checkpageAdm()
+        admHomePage.checkpage()
 
-        headerPage.registerProductsPath()
+        headerPage.userRegistrationPath()
 
-        registerProductsPage.newRegisterProducts(chance.animal(), chance.natural({min: 5, max: 250}) , chance.sentence({ words: 10 }), chance.natural({min:1, max: 50}))
+        userRegistrationPage.newUserRegistrationAdm(chance.first(), chance.email(), chance.cpf())
 
-        registerProductsPage.checkpage()
-
-        listUsersPage.deleteUser()
+        listUsersPage.checkpage()
     })
 })

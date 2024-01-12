@@ -46,6 +46,7 @@ class header {
     }
 
     logout() {
+        cy.wait(1000)
         cy.get(this.selectorsList().logoutButton).click()
         cy.location('pathname').should('equal', '/login')
     }

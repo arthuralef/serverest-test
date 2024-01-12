@@ -18,6 +18,11 @@ class listUsers {
         cy.get(this.selectorsList().deleteButton).eq(0).click()
     }
 
+    checkpage() {
+        cy.wait(1000)
+        cy.location('pathname').should('equal', '/admin/listarusuarios')
+    }
+
 }
 
 export default listUsers
