@@ -2,7 +2,7 @@ class listUsers {
 
     selectorsList() {
         const selectors = {
-            toEditButton: ".btn-info[type='button']",
+            toEditButton: ".center .btn-info",
             deleteButton: ".btn-danger[type='button']"
         }
 
@@ -11,11 +11,11 @@ class listUsers {
     }
 
     editUser() {
-        cy.get(this.selectorsList().toEditButton).eq(0).click()
+        cy.get(this.selectorsList().toEditButton).eq(2).click()
     }
 
     deleteUser() {
-        cy.get(this.selectorsList().deleteButton).eq(0).click()
+        cy.get(this.selectorsList().deleteButton).eq(2).click()
     }
 
     checkpage() {
