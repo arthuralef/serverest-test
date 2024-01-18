@@ -2,6 +2,7 @@ import login from "../pages/loginPage"
 import createAccount from "../pages/createAccountPage"
 import header from "../pages/headerPage"
 import home from "../pages/homePage"
+import myListProducts from "../pages/myListProductsPage"
 
 const Chance = require('chance')
 
@@ -10,9 +11,10 @@ const loginPage = new login()
 const createAccountPage = new createAccount()
 const headerPage = new header()
 const homePage = new home()
+const myListProductsPage = new myListProducts()
 
 describe('primeiro teste', () => {
-    it('tente serverest', () =>{
+    it('tente serverest', () => {
 
         loginPage.checkpage()
 
@@ -24,5 +26,13 @@ describe('primeiro teste', () => {
 
         homePage.addProduct()
 
+        myListProductsPage.checkpage()
+
+        myListProductsPage.increaseQuantity()
+
+        myListProductsPage.decreaseQuantity()
+
+        myListProductsPage.clearList()
     })
+    
 })
