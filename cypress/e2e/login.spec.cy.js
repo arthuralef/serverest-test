@@ -9,8 +9,8 @@ const loginPage = new login()
 const createAccountPage = new createAccount()
 const headerPage = new header()
 
-describe('primeiro teste', () => {
-    it('tente serverest', () =>{
+describe('Teste de login Serverest', () => {
+    it('Criar usuario e efetuar login - Sucesso', () =>{
 
         loginPage.checkpage()
 

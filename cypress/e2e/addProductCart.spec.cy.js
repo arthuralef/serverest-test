@@ -13,8 +13,8 @@ const headerPage = new header()
 const homePage = new home()
 const myListProductsPage = new myListProducts()
 
-describe('primeiro teste', () => {
-    it('tente serverest', () => {
+describe('Teste de funcionalidade Serverest', () => {
+    it('Adicionar produto no carrinho e fazer configurações - Sucesso', () => {
 
         loginPage.checkpage()
 
@@ -33,6 +33,10 @@ describe('primeiro teste', () => {
         myListProductsPage.decreaseQuantity()
 
         myListProductsPage.clearList()
+
+        headerPage.logout()
+
+        loginPage.checkpage()
     })
     
 })

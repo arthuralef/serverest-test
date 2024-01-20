@@ -13,7 +13,7 @@ const headerPage = new header()
 const listUsersPage = new listUsers()
 const admHomePage = new admHome()
 
-describe('primeiro teste', () => {
+describe('Teste de funcionalidade Serverest', () => {
     it('tente serverest', () => {
 
         loginPage.checkpage()

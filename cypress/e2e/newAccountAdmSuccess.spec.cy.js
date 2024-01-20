@@ -7,8 +7,8 @@ const chance = new Chance()
 const loginPage = new login()
 const createAccountPage = new createAccount()
 
-describe('primeiro teste', () => {
-    it('tente serverest', () =>{
+describe('Teste de novo usuario Serverest', () => {
+    it('Criar usuario com a opção de administrador - Sucesso', () =>{
 
         loginPage.checkpage()
 

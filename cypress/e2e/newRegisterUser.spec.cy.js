@@ -15,8 +15,8 @@ const listUsersPage = new listUsers()
 const admHomePage = new admHome()
 const userRegistrationPage = new userRegistration()
 
-describe('primeiro teste', () => {
-    it('tente serverest', () =>{
+describe('Teste de funcionalidade Serverest', () => {
+    it('Logar como administrador e criar novo usuario - Sucesso', () =>{
 
         loginPage.checkpage()
 

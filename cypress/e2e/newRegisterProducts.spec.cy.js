@@ -13,8 +13,8 @@ const headerPage = new header()
 const registerProductsPage = new registerProducts()
 const listUsersPage = new listUsers()
 
-describe('primeiro teste', () => {
-    it('tente serverest', () =>{
+describe('Teste de funcionalidade Serverest', () => {
+    it('Logar como administrador e registrar novo produto - Sucesso', () =>{
 
         loginPage.checkpage()
 
