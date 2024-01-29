@@ -1,8 +1,7 @@
 # Introdução
 
-Bem vindo ao projeto de automação da loja virtual.
-
-Ele foi criado utilizando Cypress, JavaScript, Chance.js.
+<h3>Bem vindo ao projeto de automação da loja virtual.
+<p>Ele foi criado utilizando Cypress, JavaScript, Chance.js.</h3>
 
 Total de cenários: 8
 
